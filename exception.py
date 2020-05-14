@@ -6,6 +6,8 @@ while True:
 
     except ValueError as err:
         print("Please provide an integer value",err)
+    except IOError:
+        print("Errorr!!!")
     else:
         print("AVerage is",avg)
         break
